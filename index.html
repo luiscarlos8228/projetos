@@ -4,22 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>botao</title>
+    <script>
+        function alterarTexto() {
+            var elementoTexto = document.getElementById("texto");
 
+            if (elementoTexto.innerHTML === "mudar texto") {
+                
+                elementoTexto.innerHTML = "deu certo";
+            } else {
+
+                elementoTexto.innerHTML = "mudar texto";
+            }
+        }
+    </script>
     <!--style para incluir css-->
     <style>
         
         div {
-            background-color: yellow;
-            margin: 0 auto;
-            width: 50%;
-            text-align: center;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
         }
+
     </style>
 </head>
 <body>
+    <p id="texto">mudar texto</p>
     <div>
-        <p><span>texto teste </span></p>
-        <input type="button" value="botao" onclick= "window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ';">   
+        <input type="button" value="mudar texto" onclick= "alterarTexto()">   
     </div>
 </body>
 </html>
