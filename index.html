@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>botao</title>
-    <script>
-        function alterarTexto() {
-            var elementoTexto = document.getElementById("texto");
-
-            if (elementoTexto.innerHTML === "mudar texto") {
-                
-                elementoTexto.innerHTML = "deu certo";
-            } else {
-
-                elementoTexto.innerHTML = "mudar texto";
-            }
-        }
-    </script>
-    <!--style para incluir css-->
+    <link rel="stylesheet" href="styles.css">
+    <title>League of Legends Wallpaper</title>
     <style>
-        
-        div {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
+        .image-container {
+            width: 100%;
+            height: 100%;
+            display: none;
         }
-
     </style>
 </head>
+
 <body>
-    <p id="texto">mudar texto</p>
-    <div>
-        <input type="button" value="mudar texto" onclick= "alterarTexto()">   
+    <script src="javinha.js"></script>
+    <!--inicio grid-->
+    <div class="container" id="template-areas">
+        <div id="header">
+        </div>
+
+        <div id="sidebar">
+            <p><h2>champions</h2></p>
+            <button onclick="mostrarImagem('sett')">sett</button><br>
+            <button onclick="mostrarImagem('aphelios')">aphelios</button><br>
+            <button onclick="mostrarImagem('darius')">darius</button><br>
+            <button onclick="mostrarImagem('ahri')">ahri</button><br>
+            <button onclick="mostrarImagem('lee sin')">lee sin</button><br>
+            <button onclick="mostrarImagem('master yi')">master yi</button><br>
+            <button onclick="mostrarImagem('irelia')">irelia</button><br>
+            <button onclick="mostrarImagem('nick link')">nick link</button><br>
+            <button onclick="mostrarImagem('jayce')">jayce</button><br>
+            <button onclick="mostrarImagem('jinx')">jinx</button><br>
+        </div>
+
+        <div id="content">
+            <img class="image-container" id="imagemChampion" src="" alt="Champions">
+        </div>
+
+        <div id="footer">
+            <button class="anterior">anterior</button>
+ 
+        </div>
+
+        <div></div>
+
+        <div id="footer2">
+            
+            <button class="proximo">proximo</button>
+        </div>
+        
     </div>
 </body>
 </html>

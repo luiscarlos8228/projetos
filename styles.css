@@ -1,0 +1,66 @@
+.container {
+    background-color: rgb(0, 0, 0);
+    border: 3px solid rgb(0, 0, 0);
+    padding: 15px;
+    display: grid;
+    gap: 1px; 
+    grid-template-areas: 
+        'header header header header'
+        'sidebar content content content'
+        'sidebar footer branco footer2';
+    
+}
+
+.container div {
+    background-color: #c8c6ca;
+    padding: 20px;
+    border: 1px solid rgb(0, 0, 0);
+}
+
+#header {
+    grid-area: header;
+    text-align: center;
+    background-image: url(58ih2en76vu31.png);
+    background-size: cover;
+    height: 100px;
+}
+
+#sidebar{
+    text-align: center;
+    grid-area: sidebar;
+}
+
+#content {
+    grid-area: content;
+    height: 480px;
+    background-image: url(2020_Banner.jpg);
+    background-size: cover;
+    background-color: black;
+}
+
+#footer {
+    grid-area: footer;
+    text-align: center;
+}
+
+#footer2 {
+    grid-area: footer2;
+    text-align: center;
+}
+
+#embranco {
+    grid-area: branco;
+}
+
+
+/* botao */
+
+button {
+    font-size: larger;
+    width: 200px;
+    margin: 10px;
+}
+
+body {
+    background-color: black;
+}
