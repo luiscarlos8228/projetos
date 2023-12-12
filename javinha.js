@@ -45,3 +45,10 @@ function mostrarImagem(champion) {
     }
     imagemChampion.style.display = "block";
 }
+
+document.addEventListener("click", function() {
+    var audio = document.getElementById("clickSound");
+    audio.currentTime = 0; // Reinicia a reprodução do áudio
+    audio.volume = 0.01; // Define o volume para metade
+    audio.play();
+});
